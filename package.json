@@ -4,22 +4,15 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel src/index.html -p 3000",
-    "build": "parcel build src/index.html",
-    "document": "googledoc-to-json $(cat .docid) -c config.json -o src/archie.json"
+    "build": "parcel build src/index.html --public-url ./ --out-dir dist"
   },
   "license": "MIT",
-  "dependencies": {
-    "prop-types": "^15.6.0",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-eslint": "^8.0.3",
     "babel-preset-env": "^1.6.1",
-    "babel-preset-react": "^6.24.1",
     "eslint-config-airbnb": "^16.1.0",
-    "googledoc-to-json": "^0.4.1",
     "node-sass": "^4.7.2",
-    "parcel-bundler": "^1.2.1"
+    "parcel-bundler": "*"
   }
 }
