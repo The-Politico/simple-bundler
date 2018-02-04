@@ -5,7 +5,9 @@
     "browser": true
   },
   "rules": {
-    "no-console": 0
+    "no-console": 0,
+    "comma-dangle": ["error", "always"],
+    "semi": ["error", "always"]
   },
-  "extends": "airbnb"
+  "extends": ["standard", "standard-react"]
 }

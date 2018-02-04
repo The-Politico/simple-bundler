@@ -1,6 +1,4 @@
-# NICAR 2018 Reusable charts session
-
-## Using the repo
+# simple-bundler prototype
 
 ### Development
 
@@ -8,11 +6,39 @@ To start developing with this repository, run the following:
 
 ```
 $ npm install
-$ npm start
+$ npm run start
 ```
 
-Then, visit localhost:3000 in your browser. You should see the page load.
+Then, visit http://localhost:3000 in your browser. You should see the page load.
 
-### Building
+### Other development commands
 
-To build the project into production-ready Javascript, run `npm run build`
+##### Develop with API server
+
+```
+$ npm run start:api
+```
+
+##### Build to `dist/`
+
+```
+$ npm run build
+```
+
+##### Build to `docs/` for publishing as GitHub page
+
+```
+$ npm run build:gitpage
+```
+
+##### Build and publish page to AWS S3 bucket
+
+1. Make sure you have [AWS credentials stored in your user profile](https://docs.aws.amazon.com/cli/latest/userguide/cli-config-files.html).
+
+2. Configure AWS settings in package.json.
+
+3. Run publish command:
+
+  ```
+  $ npm run publish:aws
+  ```
